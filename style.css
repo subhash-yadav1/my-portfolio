@@ -167,6 +167,18 @@ nav ul li a:hover::after {
 .tab-contents {
     display: none;
 }
+.certificate{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(12, 255, 12);
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+.certificate:hover{
+    border: 1px solid rgb(253, 249, 14);
+}
 
 .tab-contents.active-tab {
     display: block;
