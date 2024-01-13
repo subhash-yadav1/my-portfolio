@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+ 
+}
+.nav{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2vw 0.01vw;
+}
+
+.part2{
+  display: flex;
+  align-items: center;
+  /* background-color: aqua; */
+  gap: 4vw;
+  padding: 0 6vw;
+}
+.nav h1{
+  font-size: 2vw;
+  font-weight: 800;
+  padding: 0 2vw;
+  cursor: pointer;
+}
+
+.nav h4{
+  font-size: 1vw;
+  cursor: pointer;
+}
+ .nav .fa-solid{
+    font-size: 2vw;
+    font-weight: 900;
+    display: none;
+}
+
+#main .content{
+  height: 90vh;
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+}
+
+#main .content .left{
+  height :90vh;
+  width: 50%;
+}
+#main .content .right{
+  height: 90vh;
+  width: 50%;
+  /* background-color: #fff; */
+}
+#main .content .rap{
+  margin: 9vw 5vw;
+}
+#main .content .left .lorem{
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+#main .content .left p span{
+  color:#2599D9;
+}
+
+#main .content .right img{
+  height: 38vw;
+  width: 38vw;
+  
+}
+
+.content .button{
+  border: 2px solid black;
+  height: 6vh;
+  width: 12vw;
+  font-size: 3.5vh;
+  font-weight: 500;
+  border-radius: 14px;
+  padding: 5px 5px;
+  margin: 10vh 31vh;
+  background-color:#4899D9 ;
+  cursor: pointer;
+}
+
+.content .button p{
+  text-align: center;
+}
+.content .button:hover{
+  background-color: black;
+  color:#4899D9  ;
+}
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------ */
+
+@media (max-width:600px) {
+
+ .nav h1{
+  font-size: 6.8vw;
+  padding: 2vw 4vw;
+  }
+  .nav h4{
+    display: none;
+  }
+  .nav .fa-solid{
+    display: flex;
+    font-size: 8vw;
+    padding: 0 2vw;
+  }
+  #main .content{
+    display: block;
+  }
+  
+  #main .content .left{
+    height :5vh;
+    width: 100%;
+    margin: 3vh 1.2vw;
+  }
+  
+  #main .content .left .lorem{
+    font-size: 9vw;
+    font-weight: 700;
+    margin-top: 20vh;
+  }
+  .content .small{
+    font-size: 1.2vh;
+    margin-top: 1vh;
+  }
+  #main .content .right img{
+    height: 50vh;
+    width:50vh ;
+    margin-top: 27vh ;
+    margin-bottom: 0;
+    
+  }
+  .content .button{
+    display: none;
+  }
+}
+

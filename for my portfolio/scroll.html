@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scroll.css">
+</head>
+
+<body ncontextmenu="return false"o>
+    
+    <section>
+        <img src="images/subhash yadav profile.jpg" alt="" class="Subhash-Yadav">
+        
+        <h1>PROJECTS <br>⇣</h1>
+    </section>
+
+    <section>
+        <div class="container reveal">
+            <h2>Landing Pages</h2>
+            <div class="card">
+                <div class="text-card">
+                    <img class="imgg" src="images/sample site image.jpg" alt="PROJECT">
+                    <a href="landing pages/index.html"><button>Visit</button></a>
+                </div>
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container reveal">
+            <h2 class="wide">Full Pages</h2>
+            <div class="card">
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container reveal">
+            <h2 class="wide">Clone Site</h2>
+            <div class="card">
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+                <div class="text-card">
+                    <h3>Comming Soon..</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt dicta maiores fugit
+                        explicabo, dolorem quia omnis quo veritatis vel quod at consequatur obcaecati veniam perferendis
+                        illo qui, harum debitis?</p><button>Visit</button>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+    <div class="copyright">
+        <p> All rights reserved © 2023 subahsh<p>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+                      window.addEventListener('scroll',reveal);
+
+                      function reveal(){
+                        var reveals = document.querySelectorAll('.reveal');
+
+                        for(var i = 0; i < reveals.length; i++){
+
+                            var windowheight = window.innerHeight;
+                            var revealtop = reveals[i].getBoundingClientRect().top;
+                            var revealpoint = 150;
+
+                            if(revealtop < windowheight - revealpoint){
+                                reveals[i].classList.add('active');
+                            }
+
+                            else{
+                                reveals[i].classList.remove('active');
+                            }
+                        }
+                      }
+
+
+    </script>
+
+</body>
+
+</html>
