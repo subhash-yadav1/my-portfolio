@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #1D212B;
+    background: #242e47;
 }
 
 .Subhash-Yadav {
@@ -31,9 +31,10 @@ section {
     align-items: center;
 }
 button {
+    box-shadow: 0 0.45px 10px;
     height: 5vh;
     width: 5vw;
-    background: #2696E9;
+    background: #fcfeff;
     align-content: center;
     align-items: center;
     position: relative;
@@ -90,12 +91,20 @@ section .card {
 }
 
 section .card .text-card {
-    background: #2696E9;
+    background-color: transparent;
+    
     margin: 23px;
     padding: 7px;
 
 
 }
+
+ .text-card img{
+    box-shadow: 0 0.45px 18px;
+ }
+/* section .card .text-card .new{
+    background-color: transparent;
+} */
 
 section .card .text-card h3 {
     font-size: 30px;
