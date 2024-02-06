@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+}
+body{
+    background: #d8d8d8; ;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav h3{
+    position: relative;
+    font-size: 5vh;
+    font-family: macondo swash caps;
+    color: black;
+    margin: 4vh 1vw;
+    margin-right: 27vw;
+    text-shadow: -8px 1px 10px #4e4d4d;
+}
+.nav a{
+    text-decoration: none;
+}
+
+.nav h4{
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav  .singup{
+    border: 1px solid black;
+    font-weight: 600;
+    cursor: pointer;
+    width: 8vw;
+    padding: 1vh;
+    border-radius: 25px;
+    text-align: center;
+}
+
+h1{
+    font-family: inter;
+    color: #C800DE;
+    text-shadow: -7px 0px 8.8px #383737bd;
+    font-size: 13vh;
+    margin: 17.5vh 13vw;
+    margin-bottom: 10px;
+
+}
+h5{
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 20vw;
+    margin-bottom: 4vh;
+    text-shadow: -5px 4px 6.3px #383737bd;
+}
+h5:hover{
+    color:#C800DE;
+}
+button{
+    cursor: pointer;
+    position: absolute;
+    z-index: -1;
+    margin-left: 20.8vw;
+    font-weight: 600;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: -8px -0px 15px #383737bd;
+}
+
+button:hover{
+    background-color: #C800DE;
+}
+
+svg{
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    margin-top: -14.8vh;
+    margin-left: 17.6vw;
+    transform: rotate(3deg);
+}
+.svg2{
+    
+    margin-left: 60vw;
+    
+}
+
+.svg3{
+    margin-left: 60vw;
+    z-index: -40;
+    position: absolute;
+    overflow: hidden;
+}
+
+.svg4{
+    margin-left: 60vw;
+    margin-top: -50vh;
+    transform: rotate(1deg);
+    
+}
+
+.svg5{
+    margin-left: 80vw;
+    margin-top: -50vh;
+}

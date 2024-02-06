@@ -86,21 +86,21 @@ section h2 {
 
 section .card {
     display: flex;
+
     
 
 }
 
 section .card .text-card {
     background-color: transparent;
-    
-    margin: 23px;
+    margin: 2vw;
     padding: 7px;
 
 
 }
 
  .text-card img{
-    box-shadow: 0 0.45px 18px;
+    box-shadow: 0 0.45px 10px rgba(36, 35, 35, 0.575);
  }
 /* section .card .text-card .new{
     background-color: transparent;
@@ -179,7 +179,7 @@ section .card .text-card h3 {
 }
 
 .text-card img {
-    height: 50vh;
-    width: 32vw;
+    height: 45vh;
+    width: 25vw;
     display: flex;
 }

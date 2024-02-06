@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+ #page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #747474;
+    
+}
+/* #page1 .arrow{
+    position: absolute;
+    z-index: 10;
+    margin: 50px 50px;
+
+} */
+#page1 h2{
+    color: #fff;
+    font-weight: 500;
+     text-align: center;
+     font-size: 5vh;
+     padding: 10px;
+}
+#page1 #resize1{
+   
+    height:55vh ;
+    width: 15vw;
+}
+#page1 .img1{
+    position: absolute;
+    margin:100px 24vw;
+    border-radius:20px;
+    filter: drop-shadow(2px 0 10px rgb(5, 5, 5))
+    
+}
+#page1 .img2:hover{
+    transform: translateX(140px);
+}
+
+#page1 .img2{
+    position: absolute;
+    margin: 90px 28vw;
+    z-index: -2;
+    transition: background 0.5s, transform 0.5s;
+    border-radius:20px;
+    filter: drop-shadow(10px 0 5px rgb(5, 5, 5))
+}
+#page1 .img3{
+    position: absolute;
+    margin: 80px 32vw;
+    z-index: -3;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(10px 0 10px rgb(5, 5, 5))
+}
+#page1 .img3:hover{
+    transform: translateX(140px);
+}
+#page1 .img4{
+    position: absolute;
+    margin: 70px 36vw;
+    z-index: -4;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(10px 0 10px rgb(5, 5, 5))
+}
+#page1 .img4:hover{
+    transform: translateX(140px);
+}
+#page1 .img5{
+    position: absolute;
+    margin: 60px 40vw;
+    z-index: -5;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(10px 0 10px rgb(5, 5, 5))
+}
+#page1 .img5:hover{
+    transform: translateX(140px);
+}
+#page1 .img6{
+    position: absolute;
+    margin: 50px 44vw;
+    z-index: -6;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(25px 0 10px rgb(5, 5, 5))
+}
+#page1 .img6:hover{
+    transform: translateX(140px);
+}
+#page1 .img7{
+    position: absolute;
+    margin: 40px 48vw;
+    z-index: -7;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(25px 0 10px rgb(5, 5, 5))
+}
+#page1 .img7:hover{
+    transform: translateX(140px);
+}
+#page1 .img8{
+    position: absolute;
+    margin: 30px 52vw;
+    z-index: -8;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(10px 0 7px rgb(5, 5, 5))
+}
+#page1 .img8:hover{
+    transform: translateX(140px);
+}
+#page1 .img9{
+    position: absolute;
+    margin: 20px 56vw;
+    z-index: -9;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(10px 0 7px rgb(5, 5, 5))
+}
+#page1 .img9:hover{
+    transform: translateX(140px);
+}
+#page1 .img10{
+    
+    position: absolute;
+    margin: 10px 60vw;
+    z-index: -10;
+    border-radius:20px;
+    transition: background 0.5s, transform 0.5s;
+    filter: drop-shadow(25px 0 10px rgb(5, 5, 5))
+    
+}
+
+#page1 .img10:hover{
+    transform: translateX(140px);
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #2c2828;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+#page2 img{
+    height:40vh ;
+    width: 100vw;
+    border-radius: 10px;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#page3 .blur-layer {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0.12px 10px;
+    /* margin: 16vh 19vw; */
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(139, 123, 153); */
+    /* backdrop-filter: blur(1px); */
+    /* Adjust the blur intensity as needed */
+    z-index: -1;
+    text-align: center;
+}
+
+#page3 video{
+    height: 10%;
+    width: auto;
+    position: absolute;
+    border-radius: 25px;
+    filter: drop-shadow(25px 0 10px rgb(5, 5, 5))
+
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-image: url(audio/javascript-music-player-master/javascript-music-player-master/img/bg.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fc0093;
+    border-radius: 50px;
+  }
+  
+  body {
+    -webkit-perspective: 500px;
+            perspective: 500px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    overflow-x: hidden;
+  }
+  
+  .control {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  #AllInBody {
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding: 50px 0px;
+    background: linear-gradient(45deg, rgba(0, 238, 255, 0.842), rgba(255, 0, 149, 0.651)), url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #AllInBody #ContentWarpper {
+    width: 25vw;
+    min-height: 70vh;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 10px #141414;
+            box-shadow: 1px 2px 10px #141414;
+    padding: 20px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicImg {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px solid #ff006a;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    display: inline-block;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicDesc {
+    margin: 0px 0px 20px 0px;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicDesc h2 {
+    font-size: 2rem;
+    font-family: 'Reggae One', cursive;
+    color: #fc0093;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicDesc p {
+    font-weight: 900;
+    padding: 5px 10px;
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicControls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0px 0px 0px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicControls div {
+    cursor: pointer;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicControls div:nth-child(odd) i {
+    border: none;
+    border: 2px solid transparent;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicControls div:nth-child(odd) i:hover {
+    border-color: #ff0080;
+    background: none;
+    color: #ff0080;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicControls div i {
+    font-size: 1.1rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #ff004c;
+    padding: 15px;
+    border-radius: 100%;
+    transition: 0.3s;
+    border: 2px solid #ff0080;
+  }
+  
+  #AllInBody #ContentWarpper #WholeCardContainer #MusicControls div i:hover {
+    background: #ff0080;
+    color: white;
+  }
+  
+  #AllInBody #ContentWarpper #Progress_elements {
+    padding: 10px 0px;
+    background: -webkit-gradient(linear, right top, left top, from(#00eeff), to(#ff006a));
+    background: linear-gradient(to left, #00eeff, #ff006a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Goldman', cursive;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px white;
+  }
+  
+  #AllInBody #ContentWarpper #Progress_elements #Progressduration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #AllInBody #ContentWarpper #Progress_elements #ProgressMeterContainer {
+    width: 90%;
+    height: 7px;
+    background: white;
+    border-radius: 50px;
+    margin: 20px auto 5px auto;
+    cursor: pointer;
+  }
+  
+  #AllInBody #ContentWarpper #Progress_elements #ProgressMeterContainer #ProgrssMeterChild {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, #00e1ff, #ff0077);
+    border-radius: 50px;
+  }
+  
+  footer {
+    background: #ff0077;
+    padding: 5px 0px;
+    text-align: center;
+    color: white;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: cyan;
+  }
+  
+  .anime {
+    -webkit-animation: imgAnime 3s linear infinite both;
+            animation: imgAnime 3s linear infinite both;
+  }
+  
+  @-webkit-keyframes imgAnime {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes imgAnime {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 1125px) {
+    #ContentWarpper {
+      width: 40vw !important;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    * {
+      cursor: default !important;
+    }
+    #ContentWarpper {
+      width: 50vw !important;
+    }
+  }
+  
+  @media screen and (max-width: 567px) {
+    #ContentWarpper {
+      width: 90vw !important;
+    }
+    #ContentWarpper #MusicDesc p {
+      padding: 5px 2px !important;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
+
+  /* ----------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(252, 0, 147);
+    border-radius: 50px;
+  }
+  body {
+    perspective: 500px;
+    user-select: none;
+    overflow-x: hidden;
+  }
+  .control {
+    transition: 0.2s;
+  }
+  #AllInBody {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 50px 0px;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 238, 255, 0.842),
+        rgba(255, 0, 149, 0.651)
+      ),
+      url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    #ContentWarpper {
+      width: 25vw;
+      min-height: 70vh;
+      border-radius: 10px;
+      box-shadow: 1px 2px 10px rgb(20, 20, 20);
+      padding: 20px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      backdrop-filter: blur(5px);
+      transition: 0.2s;
+      #WholeCardContainer {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+        #MusicImg {
+          width: 150px;
+          height: 150px;
+          margin: 10px auto;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            border: 5px solid rgb(255, 0, 106);
+            object-fit: cover;
+            transition: 0.2s;
+            display: inline-block;
+          }
+        }
+        #MusicDesc {
+          margin: 0px 0px 20px 0px;
+          h2 {
+            font-size: 2rem;
+            font-family: 'Reggae One', cursive;
+            color: rgb(252, 0, 147);
+            text-shadow: 1px 1px 2px black;
+          }
+          p {
+            font-weight: 900;
+            padding: 5px 10px;
+            margin: auto;
+            text-align: center;
+            color: white;
+          }
+        }
+        #MusicControls {
+          display: flex;
+          padding: 20px 0px 0px 0px;
+          justify-content: space-around;
+          align-items: center;
+          div {
+            cursor: pointer;
+            &:nth-child(odd) {
+              i {
+                border: none;
+                border: 2px solid transparent;
+                &:hover {
+                  border-color: rgb(255, 0, 128);
+                  background: none;
+                  color: rgb(255, 0, 128);
+                }
+              }
+            }
+            i {
+              font-size: 1.1rem;
+              transition: 0.3s;
+              color: rgb(255, 0, 76);
+              padding: 15px;
+              border-radius: 100%;
+              transition: 0.3s;
+              border: 2px solid rgb(255, 0, 128);
+              &:hover {
+                background: rgb(255, 0, 128);
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      #Progress_elements {
+        padding: 10px 0px;
+        background: linear-gradient(to left, rgb(0, 238, 255), rgb(255, 0, 106));
+        -webkit-background-clip:text ;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Goldman', cursive;
+        font-weight: 900;
+        text-shadow: 1px 1px 1px white;
+        #Progressduration {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        #ProgressMeterContainer {
+          width: 90%;
+          height: 7px;
+          background: white;
+          border-radius: 50px;
+          margin: 20px auto 5px auto;
+          cursor: pointer;
+          #ProgrssMeterChild {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(
+              45deg,
+              rgb(0, 225, 255),
+              rgb(255, 0, 119)
+            );
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+  
+  footer {
+    background: rgb(255, 0, 119);
+    padding: 5px 0px;
+    text-align: center;
+    color: white;
+    a {
+      text-decoration: none;
+      color: rgb(0, 255, 255);
+    }
+  }
+  
+  .anime {
+    animation: imgAnime 3s linear infinite both;
+  }
+  @keyframes imgAnime {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media screen and (max-width: 1125px) {
+    #ContentWarpper {
+      width: 40vw !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    * {
+      cursor: default !important;
+    }
+    #ContentWarpper {
+      width: 50vw !important;
+    }
+  }
+  
+  @media screen and (max-width: 567px) {
+    #ContentWarpper {
+      width: 90vw !important;
+      #MusicDesc {
+        p {
+          padding: 5px 2px !important;
+        }
+      }
+    }
+  }
+  
