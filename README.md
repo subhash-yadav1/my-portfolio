@@ -1,0 +1,6 @@
+- 👋 Hi, I’m subhash yadav
+- 👀 I’m interested in computer science
+- 🌱 I’m currently learning web development
+- 💞️ I’m looking to collaborate with some with similar interest
+- 📫 How to reach me 
+- 😄 Pronouns: Subhash | सुभाश 
