@@ -180,6 +180,7 @@ section .card .text-card h3 {
 
 .text-card img {
     height: 45vh;
-    width: 25vw;
+    width: 70vw;
     display: flex;
+    border-radius: 12px;
 }
