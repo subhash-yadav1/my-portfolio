@@ -126,9 +126,9 @@ section .card .text-card h3 {
         flex-direction: column;
     }
 
-    .text-card .imgg {
+    .text-card .imgg{
         height: 32vh;
-        width: 70vw;
+        width: 80vw;
     }
 
     .Subhash-Yadav {
@@ -179,8 +179,8 @@ section .card .text-card h3 {
 }
 
 .text-card img {
-    height: 45vh;
-    width: 70vw;
+    height: 35vh;
+    width: 23vw;
     display: flex;
     border-radius: 12px;
 }
