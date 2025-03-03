@@ -40,52 +40,6 @@ html{
     padding: 10px 10%;
 }
 
-#nav {
-    top:0;
-    position:sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border:  1px solid #363535;
-    border-radius: 55px;
-    backdrop-filter: blur(10px); 
-    width: 100%;
-}
-
-.logo {
-    width: 80px;
-}
-
-#nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-#nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    position: relative;
-}
-
-#nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgb(146, 233, 33);
-    ;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-#nav ul li a:hover::after {
-    width: 100%;
-}
-
 .header-text {
     margin-top: 15%;
     font-size: 15px;
@@ -395,19 +349,10 @@ form .btn2{
     cursor: pointer;
 }
 
-#footer{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
 
 /* --------------------------------css for small screens--------------------------- */
-#nav .fas{
-    display: none;
-}
+
+
 
 @media only screen and (max-width:600px){
     #header{
@@ -421,42 +366,6 @@ form .btn2{
         font-size: 30px;
     }
 
-    #nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-   #nav {
-        backdrop-filter: none;
-        background: rgb(0, 0, 0);
-        box-shadow: 0  2px 0.1px rgb(231, 229, 229);
-        
-      }
-     #nav .fa-bars{
-        position: relative;
-        left: -20px;
-      }
-    #nav ul{
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        right:-200px;
-        width: 200px;
-        height: 70vh;
-        border-radius: 20px;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    #nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    #nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
     .sub-title{
         font-size: 50px;
     }
@@ -479,9 +388,7 @@ form .btn2{
     .raw{
         display: block;
     }
-    #footer{
-        font-size: 14px;
-    }
+   
 }
 
 #msg{
