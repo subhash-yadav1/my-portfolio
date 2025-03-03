@@ -40,7 +40,7 @@ html{
     padding: 10px 10%;
 }
 
-nav {
+#nav {
     top:0;
     position:sticky;
     display: flex;
@@ -50,26 +50,27 @@ nav {
     border:  1px solid #363535;
     border-radius: 55px;
     backdrop-filter: blur(10px); 
+    width: 100%;
 }
 
 .logo {
     width: 80px;
 }
 
-nav ul li {
+#nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a {
+#nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
     position: relative;
 }
 
-nav ul li a::after {
+#nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -81,7 +82,7 @@ nav ul li a::after {
     transition: 0.5s;
 }
 
-nav ul li a:hover::after {
+#nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -394,7 +395,7 @@ form .btn2{
     cursor: pointer;
 }
 
-.copyright{
+#footer{
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -404,7 +405,7 @@ form .btn2{
 }
 
 /* --------------------------------css for small screens--------------------------- */
-nav .fas{
+#nav .fas{
     display: none;
 }
 
@@ -420,21 +421,21 @@ nav .fas{
         font-size: 30px;
     }
 
-    nav .fas{
+    #nav .fas{
         display: block;
         font-size: 25px;
     }
-    nav {
+   #nav {
         backdrop-filter: none;
-        background: rgba(44, 44, 44, 0.39);
-        box-shadow: 0 0 20px 10px rgba(48, 47, 47, 0.39);
+        background: rgb(0, 0, 0);
+        box-shadow: 0  2px 0.1px rgb(231, 229, 229);
         
       }
-      .fa-bars{
+     #nav .fa-bars{
         position: relative;
         left: -20px;
       }
-    nav ul{
+    #nav ul{
         backdrop-filter: blur(10px);
         position: fixed;
         top: 0;
@@ -446,11 +447,11 @@ nav .fas{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+    #nav ul li{
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    #nav ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
@@ -478,7 +479,7 @@ nav .fas{
     .raw{
         display: block;
     }
-    .copyright{
+    #footer{
         font-size: 14px;
     }
 }

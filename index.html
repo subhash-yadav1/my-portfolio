@@ -30,18 +30,9 @@
 <body oncontextmenu="return false;">
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="logo/subhash logo.png" alt="subhash yadav" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+           
+           <div id="nav"></div>
+
             <div class="header-text">
                 <p >Graphic design/digital marketing/Web/✔</p>
                 <h1 >Hi, i'm <span>Subhash</span><br>yadav from Nepal</h1>
@@ -130,7 +121,7 @@
                     <div class="layer">
                         <h3>Frontend Websites</h3>
                         <p> Explore my portfolio to witness the magic of code and creativity. From sleek designs to seamless user experiences, I showcase my expertise in frontend development. Check out my work below and let's collaborate on your next digital masterpiece!"</p>
-                        <a href="for my portfolio/scroll.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -183,9 +174,8 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p> All rights reserved © 2024 subhash<p>
-        </div>
+        <div id="footer"></div>
+
     </div>
 
 
@@ -214,15 +204,15 @@
     </script>
 
 <script>
-   var sidemenu = document.getElementById("sidemenu");
+    
+  var sidemenu = document.getElementById("sidemenu");
 
-   function openmenu(){
-    sidemenu.style.right = "0";
-   }
-   function closemenu(){
-    sidemenu.style.right = "-200px";
-   }
-
+function openmenu(){
+ sidemenu.style.right = "0";
+}
+function closemenu(){
+ sidemenu.style.right = "-200px";
+}
 </script>
 
 
@@ -251,6 +241,8 @@
     ScrollReveal().reveal('.img2',{delay:500,origin:'left',});
     // ----------------------------------------------------------------------
   </script>
+  <script src="components/footer/footer.js"></script>
+  <script src="components/navbar/nav.js"></script>
 </body>
 
 </html>
