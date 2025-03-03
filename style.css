@@ -41,14 +41,19 @@ html{
 }
 
 nav {
+    top:0;
+    position:sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border:  1px solid #363535;
+    border-radius: 55px;
+    backdrop-filter: blur(10px); 
 }
 
 .logo {
-    width: 120px;
+    width: 80px;
 }
 
 nav ul li {
@@ -419,13 +424,24 @@ nav .fas{
         display: block;
         font-size: 25px;
     }
+    nav {
+        backdrop-filter: none;
+        background: rgba(44, 44, 44, 0.39);
+        box-shadow: 0 0 20px 10px rgba(48, 47, 47, 0.39);
+        
+      }
+      .fa-bars{
+        position: relative;
+        left: -20px;
+      }
     nav ul{
-        background: #9c09f7;
+        backdrop-filter: blur(10px);
         position: fixed;
         top: 0;
         right:-200px;
         width: 200px;
-        height: 100vh;
+        height: 70vh;
+        border-radius: 20px;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
