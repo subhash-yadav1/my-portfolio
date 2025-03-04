@@ -65,6 +65,7 @@
     #nav .fas{
         display: block;
         font-size: 25px;
+        color: #fff;
     }
    #nav {
         backdrop-filter: none;
