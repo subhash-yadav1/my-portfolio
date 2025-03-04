@@ -60,13 +60,7 @@
 
 @media only screen and (max-width:600px){
   
-    .header-text{
-        margin-top: 100%;
-        font-size: 15px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    }
+ 
 
     #nav .fas{
         display: block;
