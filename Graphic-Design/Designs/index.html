@@ -73,9 +73,20 @@
             width: 400px;
         }
 
+        .contentarea img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contentarea img:hover {
+            transform: scale(1.05);
+            /* Slight zoom effect */
+        }
+
+
         @media only screen and (max-width:600px) {
             .contentarea img {
                 max-width: 300px;
+                overflow: hidden;
             }
         }
     </style>
@@ -87,20 +98,21 @@
     </div>
     <h2 class="topic">documentary Thumbnail</h2>
     <div class="contentarea">
-<img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331420/Dr.Sanduk_Ruit_Documentry_hzwf9t.png" alt="Sanduk_Ruit_Documentry">
+        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331420/Dr.Sanduk_Ruit_Documentry_hzwf9t.png"
+            alt="Sanduk_Ruit_Documentry">
 
     </div>
     <h2 class="topic">Travel/Vlog Thumbnail</h2>
     <div class="contentarea">
 
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331413/Dharavi_Reality_isuokf.png" alt="Reality of dharavi">
+        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331413/Dharavi_Reality_isuokf.png"
+            alt="Reality of dharavi">
 
     </div>
     <h2 class="topic">Tech Thumbnail</h2>
     <div class="contentarea">
 
-        <img class="upimg"
-            src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331410/New_freelancer_liina4.png"
+        <img class="upimg" src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331410/New_freelancer_liina4.png"
             alt="Complete frontend roadmap 2025">
         <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741332129/2025_frontend_roadmap_v2_eyxjzq.png"
             alt="For new freelancer">
@@ -110,7 +122,8 @@
     <h2 class="topic">Advertising/Brands</h2>
     <div class="contentarea">
 
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331412/PRODUCT_DESIGN-_orange_juice_vgpiq3.png" alt="Fresh-Orange-Juice-Poster-Design">
+        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331412/PRODUCT_DESIGN-_orange_juice_vgpiq3.png"
+            alt="Fresh-Orange-Juice-Poster-Design">
 
     </div>
     <div id="footer"></div> <!-- Footer will be loaded here -->
