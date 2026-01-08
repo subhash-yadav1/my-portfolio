@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/components/navbar/nav.html")
+  fetch("/my-portfolio/components/navbar/nav.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById("nav").innerHTML = data;
+      document.getElementById('nav').innerHTML = data;
+
+      // Set the logo URL relative to the page
+      const logo = document.querySelector('#nav .logo');
+      if (logo) {
+        logo.src = "/my-portfolio/logo/subhash-logo.png";
+      }
 
       // Add event listeners AFTER navbar loads
-      document.querySelector(".fa-bars").onclick = openmenu;
-      document.querySelector(".fa-circle-xmark").onclick = closemenu;
+      const bars = document.querySelector('.fa-bars');
+      const close = document.querySelector('.fa-circle-xmark');
+      if (bars) bars.onclick = openmenu;
+      if (close) close.onclick = closemenu;
     })
-    .catch(error => console.error("Error loading the navbar:", error));
+    .catch(error => console.error('Error loading the navbar:', error));
 });
 
 // Define the menu functions

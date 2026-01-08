@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhash Yadav - Video Editing Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://via.placeholder.com/32/6366f1/ffffff?text=SY" type="image/x-icon">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #10b981;
+            --dark: #0f172a;
+            --dark-light: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+            --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Modern Header */
+        header {
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: var(--gradient);
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: white;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Video Categories */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .category-btn {
+            background: var(--dark-light);
+            color: var(--gray);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-btn:hover {
+            background: rgba(99, 102, 241, 0.2);
+            color: white;
+        }
+
+        .category-btn.active {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Video Grid with Proper Aspect Ratios */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .video-card {
+            background: var(--dark-light);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        /* Aspect ratio containers */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+
+        /* 16:9 Aspect Ratio for horizontal videos */
+        .aspect-16-9 {
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+        }
+
+        /* 9:16 Aspect Ratio for vertical videos */
+        .aspect-9-16 {
+            padding-top: 177.78%; /* 9:16 Aspect Ratio (16/9 ≈ 1.7778) */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            padding: 20px;
+        }
+
+        .video-info h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .video-info p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .video-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .video-type {
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-light);
+            padding: 50px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--dark);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            background: var(--gradient);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .categories {
+                flex-wrap: wrap;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero {
+                padding: 60px 0 40px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .category-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Animation for video cards */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .video-card {
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .video-card:nth-child(1) { animation-delay: 0.1s; }
+        .video-card:nth-child(2) { animation-delay: 0.2s; }
+        .video-card:nth-child(3) { animation-delay: 0.3s; }
+        .video-card:nth-child(4) { animation-delay: 0.4s; }
+        .video-card:nth-child(5) { animation-delay: 0.5s; }
+        .video-card:nth-child(6) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="https://www.subhashyadav1.com.np/" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <span>Subhash Yadav</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="" class="active">Portfolio</a>
+                    <a href="https://www.subhashyadav1.com.np/">Services</a>
+                    <a href="https://www.subhashyadav1.com.np/#about">About</a>
+                    <a href="https://www.subhashyadav1.com.np/#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>VIDEO EDITING PORTFOLIO</h1>
+            <p>Showcasing my expertise in <span class="highlight">horizontal videos (16:9)</span> for YouTube, documentaries, and films, along with <span class="highlight">vertical reels (9:16)</span> optimized for Instagram, TikTok, and social media platforms.</p>
+            
+            <!-- Category Filter -->
+            <div class="categories">
+                <button class="category-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> All Videos
+                </button>
+                <button class="category-btn" data-filter="horizontal">
+                    <i class="fas fa-desktop"></i> Horizontal (16:9)
+                </button>
+                <button class="category-btn" data-filter="vertical">
+                    <i class="fas fa-mobile-alt"></i> Vertical (9:16)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Video Grid -->
+        <div class="video-grid">
+            <!-- Horizontal Video Card -->
+            <div class="video-card" data-type="horizontal">
+                <div class="video-container aspect-16-9">
+                    <iframe src="https://drive.google.com/file/d/1i1iE9urArmB7WeDjk6yCtRAdlr5qNN1j/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 1</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 1:15 min</span>
+                        <span class="video-type">16:9 Horizontal</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Video Card -->
+            <div class="video-card" data-type="vertical">
+                <div class="video-container aspect-9-16">
+                    <iframe src="https://drive.google.com/file/d/1nSGEhkweEuBRgENi77z0OoMVpNot1e6h/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 2</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 0:30 min</span>
+                        <span class="video-type">9:16 Vertical</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal Video Card -->
+            <div class="video-card" data-type="horizontal">
+                <div class="video-container aspect-16-9">
+                    <iframe src="https://drive.google.com/file/d/1gBmAkr8vM5mC5qOBEpbiYVELUQyniBt6/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 3</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 1:41 min</span>
+                        <span class="video-type">16:9 Horizontal</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Video Card -->
+           
+
+            <!-- Horizontal Video Card -->
+            <div class="video-card" data-type="horizontal">
+                <div class="video-container aspect-16-9">
+                    <iframe src="https://drive.google.com/file/d/1dbyZN-nYgFWKEVKrtLz5lp-LGKYhlYwK/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 4</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 1:41 min</span>
+                        <span class="video-type">16:9 Horizontal</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Video Card -->
+            <div class="video-card" data-type="vertical">
+                <div class="video-container aspect-9-16">
+                    <iframe src="https://drive.google.com/file/d/1GLxKAHVgFAAstzRDDKYGY31ttwLdu715/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 5</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 1:36 min</span>
+                        <span class="video-type">9:16 Vertical</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Horizontal Video Card -->
+            <div class="video-card" data-type="horizontal">
+                <div class="video-container aspect-16-9">
+                    <iframe src="https://drive.google.com/file/d/11H5zugCQHWs12XP1VoAxQY8zkCNMY0V5/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 6</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 0:11 min</span>
+                        <span class="video-type">16:9 Horizontal</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Horizontal Video Card -->
+            <div class="video-card" data-type="horizontal">
+                <div class="video-container aspect-16-9">
+                    <iframe src="https://drive.google.com/file/d/1LqJp5VoiE4LP6Dzvl-jNzRjnDjw16jv-/preview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 7</h3>
+                    <p>This video is created on the purpose to show only on subhashyadav1.com.np portfolio do not copy the content otherwise it'll leads to the legal action</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 0:11 min</span>
+                        <span class="video-type">16:9 Horizontal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <span>Subhash Yadav</span>
+                </a>
+                
+                <p>Professional Video Editor & Motion Graphics Designer</p>
+                
+                <div class="social-links">
+                    
+                    <a href="https://www.linkedin.com/in/subhash-yadav-editor/"><i class="fab fa-linkedin-in"></i></a>
+                    
+                </div>
+                
+                <p class="copyright">© 2023 Subhash Yadav. All rights reserved. | Crafted with precision and creativity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.category-btn');
+            const videoCards = document.querySelectorAll('.video-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter video cards
+                    videoCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+                            card.style.display = 'block';
+                            // Trigger animation
+                            card.style.animation = 'fadeInUp 0.5s ease forwards';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Scroll reveal animation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe video cards
+            videoCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
