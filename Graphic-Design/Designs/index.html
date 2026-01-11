@@ -4,141 +4,1026 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/components/styleCom.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" href="/logo/subhash yadav favicon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Explore Subhash Yadav's graphic design portfolio featuring stunning thumbnails for documentaries, travel vlogs, tech content, and advertising. Professional designs by a computer science student from Nepal.">
+    <meta name="keywords" content="Subhash Yadav, graphic design, portfolio, thumbnails, documentary design, travel vlog thumbnails, tech thumbnails, advertising posters, Nepal designer">
+    <meta name="author" content="Subhash Yadav">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.subhashyadav1.com.np/Graphic-Design/Designs/">
+    <link rel="shortcut icon" type="image/jpg" href="../../logo/subhash yadav favicon.png">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4314898752155726"
      crossorigin="anonymous"></script>
-    <title>Graphic Design</title>
+    <title>Graphic Design Portfolio | Subhash Yadav</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
+        :root {
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
+            --secondary: #10B981;
+            --dark: #0F172A;
+            --dark-light: #1E293B;
+            --light: #F8FAFC;
+            --gray: #94A3B8;
+            --gradient: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         * {
             margin: 0;
             padding: 0;
-            font-family: 'poppins', sans-serif;
             box-sizing: border-box;
         }
 
         body {
-            background: #272727fd;
-            color: #000000;
-            animation: fadeInAnimation ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-
+            background-color: var(--dark);
+            color: var(--light);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
         }
 
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .container {
-            height: 150vh;
+        /* Modern Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
             width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 1.2rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        .nav-link.active {
+            color: white;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
             position: absolute;
             top: 0;
-
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            z-index: -1;
         }
 
-        .contentarea {
-            margin-top: 120px;
-            height: 100%;
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+        /* Floating Particles */
+        .particles {
+            position: absolute;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
         }
 
-        .contentarea img {
-            border-radius: 10px;
+        .particle {
+            position: absolute;
+            background: var(--gradient);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 20s infinite linear;
         }
 
-        .topic {
-            color: #fff;
-            display: flex;
-            align-items: center;
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(20px, 20px) rotate(90deg); }
+            50% { transform: translate(0, 40px) rotate(180deg); }
+            75% { transform: translate(-20px, 20px) rotate(270deg); }
+        }
+
+        /* Gallery Sections */
+        .gallery-section {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
             text-align: center;
-            justify-content: center;
-            margin-top: 10rem;
+            margin-bottom: 4rem;
         }
 
-        .contentarea img {
-            width: 400px;
+        .section-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.2);
+            color: var(--primary);
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
         }
 
-        .contentarea img {
-            transition: transform 0.3s ease-in-out;
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
         }
 
-        .contentarea img:hover {
-            transform: scale(1.02);
-            /* Slight zoom effect */
+        .section-description {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+            line-height: 1.6;
         }
 
+        /* Modern Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
 
-        @media only screen and (max-width:600px) {
-            .contentarea img {
-                max-width: 300px;
-                overflow: hidden;
+        /* Design Card */
+        .design-card {
+            background: var(--dark-light);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .design-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow);
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .design-card:nth-child(1) { animation-delay: 0.1s; }
+        .design-card:nth-child(2) { animation-delay: 0.2s; }
+        .design-card:nth-child(3) { animation-delay: 0.3s; }
+        .design-card:nth-child(4) { animation-delay: 0.4s; }
+        .design-card:nth-child(5) { animation-delay: 0.5s; }
+        .design-card:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+        }
+
+        .design-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .design-card:hover .design-image {
+            transform: scale(1.05);
+        }
+
+        .design-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem;
+        }
+
+        .design-card:hover .design-overlay {
+            opacity: 1;
+        }
+
+        .design-info {
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        .design-card:hover .design-info {
+            transform: translateY(0);
+        }
+
+        .design-type {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .design-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .design-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Masonry Layout for Variety */
+        .masonry-grid {
+            columns: 3;
+            column-gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+            background: var(--dark-light);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .masonry-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--card-shadow);
+        }
+
+        .masonry-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 6rem 2rem;
+            background: var(--dark-light);
+            margin: 5rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--gray);
+            font-size: 1.125rem;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            padding: 6rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .cta-description {
+            color: var(--gray);
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-light);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--gradient);
+            transform: translateY(-2px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .masonry-grid {
+                columns: 2;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .masonry-grid {
+                columns: 1;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .gallery-section {
+                padding: 3rem 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Modal for Full Image View */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2001;
+        }
+
+        .close-modal:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div id="nav"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://www.subhashyadav1.com.np/" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <span class="logo-text">Subhash Yadav</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="" class="nav-link active">Portfolio</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="https://www.subhashyadav1.com.np/#about" class="nav-link">About</a>
+                <a href="https://www.subhashyadav1.com.np/#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Visual Storytelling Through Design</h1>
+            <p class="hero-subtitle">
+                Creating compelling thumbnails, posters, and branding materials that capture attention 
+                and communicate powerful messages. Each design tells a unique story.
+            </p>
+            <a href="#gallery" class="cta-button">
+                Explore Designs
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Documentary Thumbnails Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <span class="section-tag">Documentary</span>
+            <h2 class="section-title">Capturing Real Stories</h2>
+            <p class="section-description">
+                Thumbnails that evoke emotion and curiosity for documentary films and series
+            </p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="design-card">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331420/Dr.Sanduk_Ruit_Documentry_hzwf9t.png" 
+                         alt="Dr. Sanduk Ruit Documentary" class="design-image">
+                    <div class="design-overlay">
+                        <div class="design-info">
+                            <span class="design-type">Documentary Thumbnail</span>
+                            <h3 class="design-title">Dr. Sanduk Ruit Documentary</h3>
+                            <p class="design-description">A powerful visual narrative about the life and work of a medical pioneer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel/Vlog Thumbnails Section -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag">Travel & Vlogging</span>
+            <h2 class="section-title">Journeys & Adventures</h2>
+            <p class="section-description">
+                Vibrant designs that capture the essence of travel experiences and vlog content
+            </p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="design-card">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331413/Dharavi_Reality_isuokf.png" 
+                         alt="Reality of Dharavi" class="design-image">
+                    <div class="design-overlay">
+                        <div class="design-info">
+                            <span class="design-type">Travel Documentary</span>
+                            <h3 class="design-title">Dharavi Reality</h3>
+                            <p class="design-description">Exploring the vibrant life within one of Asia's largest slums</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Thumbnails Section -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag">Technology</span>
+            <h2 class="section-title">Tech Insights & Tutorials</h2>
+            <p class="section-description">
+                Clean, modern designs for technology content, tutorials, and educational materials
+            </p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="design-card">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331410/New_freelancer_liina4.png" 
+                         alt="Complete Frontend Roadmap 2025" class="design-image">
+                    <div class="design-overlay">
+                        <div class="design-info">
+                            <span class="design-type">Tech Tutorial</span>
+                            <h3 class="design-title">Frontend Roadmap 2025</h3>
+                            <p class="design-description">Complete guide for aspiring frontend developers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="design-card">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741332129/2025_frontend_roadmap_v2_eyxjzq.png" 
+                         alt="For New Freelancer" class="design-image">
+                    <div class="design-overlay">
+                        <div class="design-info">
+                            <span class="design-type">Career Guide</span>
+                            <h3 class="design-title">New Freelancer Guide</h3>
+                            <p class="design-description">Essential roadmap for starting a freelance career</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertising/Brands Section -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag">Advertising & Brands</span>
+            <h2 class="section-title">Brand Identity & Promotion</h2>
+            <p class="section-description">
+                Eye-catching designs for product branding and advertising campaigns
+            </p>
+        </div>
+        
+        <div class="masonry-grid">
+            <div class="masonry-item">
+                <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331412/PRODUCT_DESIGN-_orange_juice_vgpiq3.png" 
+                     alt="Fresh Orange Juice Poster Design" class="masonry-image">
+            </div>
+            <div class="masonry-item">
+                <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741433632/chips_branding_imokzp.png" 
+                     alt="Potato Chips Branding" class="masonry-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Designs Created</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24h</div>
+                <div class="stat-label">Avg Delivery Time</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <h2 class="cta-title">Ready to Bring Your Vision to Life?</h2>
+        <p class="cta-description">
+            Let's collaborate on creating stunning visuals that elevate your content and captivate your audience.
+        </p>
+        <a href="mailto:subhash.com.np@gmail.com" class="cta-button">
+            Start a Project
+            <i class="fas fa-paper-plane"></i>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Subhash Yadav</h3>
+                <p>Professional graphic designer specializing in thumbnails, posters, and branding materials that tell compelling stories.</p>
+                <div class="social-links">
+                    
+                    <a href="https://www.linkedin.com/in/subhash-yadav-editor/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">YouTube Thumbnails</a></li>
+                    <li><a href="#">Poster Design</a></li>
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">Social Media Graphics</a></li>
+                    <li><a href="#">Advertisement Design</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            © 2024 Subhash Yadav. All rights reserved. | Crafted with precision and creativity.
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <div class="modal-content">
+            <img src="" alt="" class="modal-image" id="modalImage">
+        </div>
     </div>
-    <h2 class="topic">documentary Thumbnail</h2>
-    <div class="contentarea">
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331420/Dr.Sanduk_Ruit_Documentry_hzwf9t.png"
-            alt="Sanduk_Ruit_Documentry">
 
-    </div>
-    <h2 class="topic">Travel/Vlog Thumbnail</h2>
-    <div class="contentarea">
-
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331413/Dharavi_Reality_isuokf.png"
-            alt="Reality of dharavi">
-
-    </div>
-    <h2 class="topic">Tech Thumbnail</h2>
-    <div class="contentarea">
-
-        <img class="upimg" src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331410/New_freelancer_liina4.png"
-            alt="Complete frontend roadmap 2025">
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741332129/2025_frontend_roadmap_v2_eyxjzq.png"
-            alt="For new freelancer">
-
-
-    </div>
-    <h2 class="topic">Advertising/Brands</h2>
-    <div class="contentarea">
-
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741331412/PRODUCT_DESIGN-_orange_juice_vgpiq3.png"
-            alt="Fresh-Orange-Juice-Poster-Design">
-        <img src="https://res.cloudinary.com/dfba13rti/image/upload/v1741433632/chips_branding_imokzp.png"
-            alt="potato chips branding">
-    </div>
-    <div id="footer"></div> <!-- Footer will be loaded here -->
-
-    <script src="/components/navbar/nav.js"></script>
-    <script src="/components/footer/footer.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-
-        ScrollReveal().reveal('.upimg', { delay: 1000, origin: 'down', });
+        // Create floating particles
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            const colors = ['#8B5CF6', '#EC4899', '#10B981', '#3B82F6'];
+            
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random properties
+                const size = Math.random() * 60 + 20;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const delay = Math.random() * 20;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.background = color;
+                particle.style.left = `${left}%`;
+                particle.style.top = `${top}%`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.opacity = Math.random() * 0.2 + 0.05;
+                
+                particles.appendChild(particle);
+            }
+        }
+        
+        // Initialize modal functionality
+        function initModal() {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+            
+            // Open modal on image click
+            document.querySelectorAll('.design-image, .masonry-image').forEach(img => {
+                img.addEventListener('click', () => {
+                    modalImage.src = img.src;
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close modal
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Close on background click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Close on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.style.display === 'flex') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+        
+        // Animate elements on scroll
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all design cards
+            document.querySelectorAll('.design-card').forEach(card => {
+                observer.observe(card);
+            });
+            
+            // Observe masonry items
+            document.querySelectorAll('.masonry-item').forEach(item => {
+                observer.observe(item);
+            });
+        }
+        
+        // Smooth scrolling for navigation
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            initModal();
+            initScrollAnimations();
+            initSmoothScroll();
+            
+            // Add scroll effect to navbar
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 100) {
+                    navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+                    navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
+                } else {
+                    navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+                    navbar.style.boxShadow = 'none';
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
